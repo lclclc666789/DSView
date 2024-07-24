@@ -8,9 +8,9 @@ Microsoft Visual Studio Community 2022 (64 位) - Current
 
 注意 默认在D 盘根目录 安装vcpkg
 
-2、clone 本工程 用visual studio 打开DSView.sln 直接编译 
+2、clone 本工程, checkout -b dev_msvc 用visual studio 打开DSView.sln 直接编译 
 
-3、 将dll.zip 解压到 D:\DSView\build.dir\Debug\ 
+3、 将dll1.zip  dll2.zip 解压到 D:\DSView\build.dir\Debug\ 
     虽然选的静态编译 但是运行的时候 仍然包却很多动态库，暂时不知道原因，dll.zip 时所有的库和其他以来选项
 
 4、可以直接调试，还可以打断点，嘎嘎嘎
