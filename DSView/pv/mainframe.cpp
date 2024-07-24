@@ -884,7 +884,11 @@ void MainFrame::ReadSettings()
             x, y, right-left, bottom-top, app.frameOptions.isMax);
 
     if (lstDisplayName != ""){
+#ifdef _MSC_VER //微软的编译器 静态编译的时候 不能用toStdString，qt说时msvc瞎搞，msvc不搭理qt.
+        dsv_info("Last display:%s", std::string(lstDisplayName.toLocal8Bit()).c_str());
+#else
         dsv_info("Last display:%s", lstDisplayName.toStdString().c_str());
+#endif
     }
 
     bool bReset = false;
@@ -904,7 +908,7 @@ void MainFrame::ReadSettings()
         }
 
         dsv_info("Screen name:%s, region, left:%d, top:%d, width:%d, height:%d",
-            name.toStdString().c_str(), rc.left(), rc.top(), rc.width(), rc.height() );
+           std::string(name.toLocal8Bit()).c_str(), rc.left(), rc.top(), rc.width(), rc.height() );
     }
  
     if (scrIndex == -1){
@@ -965,7 +969,7 @@ void MainFrame::ReadSettings()
         }
 
         dsv_info("Show as max, screen:%s, x:%d, y:%d, w:%d, h:%d", 
-            scrName.toStdString().c_str(), full_rect.x(), full_rect.y(),
+            std::string(scrName.toLocal8Bit()).c_str(), full_rect.x(), full_rect.y(),
             full_rect.width(), full_rect.height());
     }
     else if (bReset)
@@ -982,7 +986,7 @@ void MainFrame::ReadSettings()
         _normalRegion = _initWndInfo.r;
 
         dsv_info("Reset, screen:%s, x:%d, y:%d, w:%d, h:%d", 
-            scrName.toStdString().c_str(), full_rect.left(), full_rect.top(),
+            std::string(scrName.toLocal8Bit()).c_str(), full_rect.left(), full_rect.top(),
              full_rect.width(), full_rect.height());
     }
     else
@@ -1005,7 +1009,7 @@ void MainFrame::ReadSettings()
         _normalRegion = _initWndInfo.r; 
  
         dsv_info("Restore, screen:%s, x:%d, y:%d, w:%d, h:%d", 
-            scrName.toStdString().c_str() ,full_rect.left(), full_rect.top(), 
+            std::string(scrName.toLocal8Bit()).c_str() ,full_rect.left(), full_rect.top(), 
             full_rect.width(), full_rect.height());
     }
 

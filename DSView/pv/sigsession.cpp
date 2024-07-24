@@ -314,7 +314,7 @@ namespace pv
         std::string file_name = pv::path::ToUnicodePath(name);
         dsv_info("Load file: \"%s\"", file_name.c_str());
 
-        std::string file_str = name.toUtf8().toStdString();
+        std::string file_str = std::string(name.toLocal8Bit());
 
         if (ds_device_from_file(file_str.c_str()) != SR_OK)
         {

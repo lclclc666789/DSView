@@ -418,7 +418,7 @@ void SpectrumTrace::paint_fore(QPainter &p, int left, int right, QColor fore, QC
     blank_top = max(blank_top, (double)TickHeight + text_height);
 
     // delta Frequency
-    QString freq_str =  QString::fromWCharArray(L" \u0394") + "Freq: " + format_freq(deltaFreq,4);
+    QString freq_str =  QString::fromUtf8(" жд") + "Freq: " + format_freq(deltaFreq,4);
     p.drawText(0, 0, width, get_view_rect().height(),
                AlignRight | AlignBottom | TextDontClip, freq_str);
     double delta_left = width-p.boundingRect(0, 0, INT_MAX, INT_MAX,

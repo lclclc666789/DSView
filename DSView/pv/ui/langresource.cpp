@@ -191,7 +191,7 @@ void LangResource::load_page(Lang_resource_page &p, QString file)
         if (obj.contains("id") && obj.contains("text")){
             QString id = obj["id"].toString().trimmed();
             QString text = obj["text"].toString();
-            p._res[id.toStdString()] = text.toStdString();
+            p._res[std::string(id.toLocal8Bit()) ] = std::string(text.toLocal8Bit());  
         }
     }
 }

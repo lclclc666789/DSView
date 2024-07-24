@@ -68,7 +68,7 @@ namespace
 
 static bool InitCapturePowerEvent(HWND hWnd)
 {
-    g_hUser32 = LoadLibrary(L"user32.dll");
+    g_hUser32 = LoadLibrary("user32.dll");
     if (g_hUser32 == NULL) {
         dsv_info("ERROR: Failed to load user32.dll");
         return false;
@@ -149,7 +149,7 @@ WinNativeWidget::WinNativeWidget(const int x, const int y, const int width,
     wcx.lpfnWndProc = WndProc;
     wcx.cbClsExtra = 0;
     wcx.cbWndExtra = 0;
-    wcx.lpszClassName = L"DSViewWindowClass";
+    wcx.lpszClassName = "DSViewWindowClass";
     wcx.hCursor = LoadCursor(hInstance, IDC_ARROW);
     wcx.hbrBackground = CreateSolidBrush(RGB(r, g, b));
  
@@ -160,7 +160,7 @@ WinNativeWidget::WinNativeWidget(const int x, const int y, const int width,
         assert(false);
     }
  
-    _hWnd = CreateWindow(L"DSViewWindowClass", L"DSView",
+    _hWnd = CreateWindow("DSViewWindowClass", "DSView",
             //WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_THICKFRAME | WS_CLIPCHILDREN,
             WS_OVERLAPPEDWINDOW | WS_CLIPCHILDREN | WS_CLIPSIBLINGS, 
             x, y, width, height,
@@ -184,7 +184,7 @@ WinNativeWidget::WinNativeWidget(const int x, const int y, const int width,
     InitCapturePowerEvent(_hWnd);
 
     //Disabled the IMME.
-    HMODULE hImm32Dll = LoadLibraryW(L"imm32.dll");
+    HMODULE hImm32Dll = LoadLibrary("imm32.dll");
     if (hImm32Dll != NULL){
         FN_ImmAssociateContext fnImm = (FN_ImmAssociateContext)GetProcAddress(hImm32Dll, "ImmAssociateContext");
 

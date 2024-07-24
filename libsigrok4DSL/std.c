@@ -23,6 +23,10 @@
 #include "log.h"
 #include <assert.h>
 
+
+#include <windows.h>
+
+
 /**
  * Standard sr_driver_init() API helper.
  *
@@ -93,7 +97,26 @@ SR_PRIV int std_session_send_df_header(const struct sr_dev_inst *sdi,
     packet.status = SR_PKT_OK;
 	packet.payload = (uint8_t *)&header;
 	header.feed_version = 1;
+#ifdef _MSC_VER // gettimeofday 在win 上不可用  凑合一下
+    FILETIME ft;
+    unsigned __int64 tmpres = 0;
+    static const unsigned __int64 EPOCH = ((unsigned __int64)116444736000000000ULL);
+
+	GetSystemTimeAsFileTime(&ft);
+
+	tmpres |= ft.dwHighDateTime;
+	tmpres <<= 32;
+	tmpres |= ft.dwLowDateTime;
+
+	tmpres -= EPOCH;
+	tmpres /= 10;  /* Convert into microseconds */
+
+	header.starttime.tv_sec = (long)(tmpres / 1000000UL);
+	header.starttime.tv_usec = (long)(tmpres % 1000000UL);
+
+#else
 	gettimeofday(&header.starttime, NULL);
+#endif
 
 	if ((ret = ds_data_forward(sdi, &packet)) < 0) {
 		sr_err("%sFailed to send header packet: %d.", prefix, ret);

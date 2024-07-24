@@ -180,7 +180,7 @@ static void dso_status_update(struct session_vdev *vdev)
 
     for(int i = 0 ; i<DSO_PACKET_LEN ; i += 2)
     {
-        uint8_t val = *(uint8_t*)(pack_buffer->post_buf +i);
+        uint8_t val = *((uint8_t*)(pack_buffer->post_buf) + i);
         if (val >  ch_max){
             ch_max = val;
         }
@@ -205,7 +205,7 @@ static void dso_status_update(struct session_vdev *vdev)
     {
         if(i <= pack_buffer->post_len || vdev->instant)
         {
-            uint8_t val = *(uint8_t*)(pack_buffer->post_buf +i);
+            uint8_t val = *(uint8_t*)((uint8_t*)(pack_buffer->post_buf) + i);
             if (first_plevel)
             {
                 if(val <= DSO_MID_VAL)
@@ -326,10 +326,10 @@ static int init_analog_random_data(struct session_vdev * vdev)
     for(uint64_t i = 0;i < DSO_BUF_LEN ;i++)
     {
         if(i % 2 == 0){
-            *(uint8_t*)(vdev->data_buf + i) = ANALOG_RANDOM_DATA;
+            *(uint8_t*)((uint8_t*)(vdev->data_buf) + i) = ANALOG_RANDOM_DATA;
         }
         else{
-            *(uint8_t*)(vdev->data_buf + i) = *(uint8_t*)(vdev->data_buf + i -1);
+            *(uint8_t*)((uint8_t*)(vdev->data_buf) + i) = *(uint8_t*)((uint8_t*)(vdev->data_buf) + i -1);
         }
     }
 
@@ -601,7 +601,7 @@ static int init_random_data(struct session_vdev *vdev)
 
         if(probe_count[cur_probe]> 0)
         {
-            memset(vdev->data_buf+i,probe_status[cur_probe],1);
+            memset((uint8_t*)(vdev->data_buf) + i,probe_status[cur_probe],1);
             probe_count[cur_probe] -= 1;
         }
         else
@@ -613,7 +613,7 @@ static int init_random_data(struct session_vdev *vdev)
                 probe_status[cur_probe] = LOGIC_HIGH_LEVEL;
             }
             probe_count[cur_probe] = rand()%SR_KB(1);
-            memset(vdev->data_buf+i,probe_status[cur_probe],1);
+            memset((uint8_t*)(vdev->data_buf) + i,probe_status[cur_probe],1);
             probe_count[cur_probe] -= 1;
         }
     }
@@ -1513,7 +1513,7 @@ static int receive_data_logic(int fd, int revents, const struct sr_dev_inst *sdi
                 for(uint16_t j = 0 ; j< vdev->packet_len/8;j++)
                 {
                     uint64_t cur_index = (probe_index*8) + (j*vdev->enabled_probes*8);
-                    memset(logic_post_buf+cur_index,LOGIC_HIGH_LEVEL,8);
+                    memset((uint8_t*)logic_post_buf+cur_index,LOGIC_HIGH_LEVEL,8);
                 }
             }
         }
@@ -1523,7 +1523,7 @@ static int receive_data_logic(int fd, int revents, const struct sr_dev_inst *sdi
             random = rand() % random;
             int index = vdev->enabled_probes * 8;
             random = floor(random/index)*index;
-            memcpy(logic_post_buf,vdev->data_buf + random,logic.length);
+            memcpy(logic_post_buf, (uint8_t*)(vdev->data_buf) + random,logic.length);
         }
         logic.data = logic_post_buf;
 
@@ -1997,10 +1997,10 @@ static int receive_data_dso(int fd, int revents, const struct sr_dev_inst *sdi)
             for(uint64_t i = 0 ; i < pack_buffer->post_buf_len ;i++)
             {
                 if(i % 2 == 0){
-                    *(uint8_t*)(pack_buffer->post_buf + i) = DSO_RANDOM_DATA;
+                    *(uint8_t*)((uint8_t*)(pack_buffer->post_buf ) + i) = DSO_RANDOM_DATA;
                 } 
                 else{
-                    *(uint8_t*)(pack_buffer->post_buf + i) = *(uint8_t*)(pack_buffer->post_buf + i -1);
+                    *(uint8_t*)((uint8_t*)(pack_buffer->post_buf ) + i) = *(uint8_t*)((uint8_t*)(pack_buffer->post_buf ) + i -1);
                 }
             }
             pack_buffer->post_len = pack_buffer->post_buf_len;
@@ -2153,7 +2153,7 @@ static int receive_data_dso(int fd, int revents, const struct sr_dev_inst *sdi)
                 }
                 vdiv = probe->vdiv;
 
-                uint8_t temp_val = *((uint8_t*)pack_buffer->post_buf + i);
+                uint8_t temp_val = *((uint8_t*)(uint8_t*)(pack_buffer->post_buf ) + i);
 
                 if(vdiv > SR_mV(200))
                 {
@@ -2169,7 +2169,7 @@ static int receive_data_dso(int fd, int revents, const struct sr_dev_inst *sdi)
                         tem =  val * DSO_DEFAULT_VDIV / vdiv;
                         temp_val = DSO_MID_VAL - tem;
                     }
-                    *((uint8_t*)pack_buffer->post_buf + i) = temp_val;
+                    *((uint8_t*)(uint8_t*)(pack_buffer->post_buf ) + i) = temp_val;
                 }
                 else{
                     if(temp_val > DSO_MID_VAL)
@@ -2201,7 +2201,7 @@ static int receive_data_dso(int fd, int revents, const struct sr_dev_inst *sdi)
                         tem-= high_gate;
                     }
                         
-                    *((uint8_t*)pack_buffer->post_buf + i) = (uint8_t)tem;
+                    *((uint8_t*)(uint8_t*)(pack_buffer->post_buf ) + i) = (uint8_t)tem;
                 }
             }
 
@@ -2241,11 +2241,11 @@ static int receive_data_dso(int fd, int revents, const struct sr_dev_inst *sdi)
             }
 
             for(int i = pack_buffer->post_len -1; i > 1; i -= 2){
-                *((uint8_t*)pack_buffer->post_buf + i) = *((uint8_t*)pack_buffer->post_buf + i - 2);
+                *((uint8_t*)(uint8_t*)(pack_buffer->post_buf ) + i) = *((uint8_t*)(uint8_t*)(pack_buffer->post_buf ) + i - 2);
             }
 
             for(int i = pack_buffer->post_len -2; i > 0; i -= 2){
-                *((uint8_t*)pack_buffer->post_buf + i) = *((uint8_t*)pack_buffer->post_buf + i - 2);
+                *((uint8_t*)(uint8_t*)(pack_buffer->post_buf ) + i) = *((uint8_t*)(uint8_t*)(pack_buffer->post_buf ) + i - 2);
             }
 
             *(uint8_t*)pack_buffer->post_buf = top0;
@@ -2278,7 +2278,7 @@ static int receive_data_dso(int fd, int revents, const struct sr_dev_inst *sdi)
         dso.mqflags = SR_MQFLAG_AC;
         dso.num_samples = pack_buffer->post_len / chan_num;
         if (vdev->instant){
-            dso.data = pack_buffer->post_buf+vdev->post_data_len;
+            dso.data = (uint8_t*)(pack_buffer->post_buf)+vdev->post_data_len;
         }
         else{
             dso.data = pack_buffer->post_buf;
@@ -2438,7 +2438,7 @@ static int receive_data_analog(int fd, int revents, const struct sr_dev_inst *sd
                     else{
                         cur_l = 1 + (i - 1) * per_block_after_expend + j * 2;
                     }
-                    memset(vdev->data_buf + cur_l,temp_value,1);
+                    memset((uint8_t*)(vdev->data_buf) + cur_l,temp_value,1);
                 }
             }
             safe_free(analog_data);
@@ -2462,13 +2462,13 @@ static int receive_data_analog(int fd, int revents, const struct sr_dev_inst *sd
     {
         uint64_t back_len = vdev->data_buf_len - vdev->analog_read_pos;
         uint64_t front_len = vdev->packet_len - back_len;
-        memcpy(vdev->analog_post_buf , vdev->data_buf + vdev->analog_read_pos , back_len);
-        memcpy(vdev->analog_post_buf+ back_len , vdev->data_buf, front_len);
+        memcpy(vdev->analog_post_buf , (uint8_t*)(vdev->data_buf) + vdev->analog_read_pos , back_len);
+        memcpy((uint8_t*)(vdev->analog_post_buf)+ back_len , vdev->data_buf, front_len);
         vdev->analog_read_pos = front_len;
     }
     else
     {
-        memcpy(vdev->analog_post_buf,vdev->data_buf + vdev->analog_read_pos,vdev->packet_len);
+        memcpy(vdev->analog_post_buf, (uint8_t*)(vdev->data_buf )+ vdev->analog_read_pos,vdev->packet_len);
         vdev->analog_read_pos += vdev->packet_len;
     }
 
@@ -2752,7 +2752,7 @@ int dso_wavelength_updata(struct session_vdev *vdev)
         {
             for(int i = 0 ; i < DSO_PACKET_LEN/2 ; i += 2)
             {
-                tmp_val = *((uint8_t*)pack_buffer->post_buf + i);
+                tmp_val = *((uint8_t*)(uint8_t*)(pack_buffer->post_buf ) + i);
                 if(tmp_val == wave_max_val)
                 {
                     l = i;
@@ -2796,11 +2796,11 @@ int dso_wavelength_updata(struct session_vdev *vdev)
                 }
             }
             
-            *((uint8_t*)tmp_buf+ i) = *((uint8_t*)pack_buffer->post_buf + index + l);
+            *((uint8_t*)tmp_buf+ i) = *((uint8_t*)(uint8_t*)(pack_buffer->post_buf ) + index + l);
         }
 
         for(int i = 0 ; i < DSO_PACKET_LEN/bit ; i++){
-            memcpy(pack_buffer->post_buf+i*bit,tmp_buf,bit);
+            memcpy((uint8_t*)(pack_buffer->post_buf)+i*bit,tmp_buf,bit);
         }
 
         safe_free(tmp_buf);

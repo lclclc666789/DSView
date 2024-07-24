@@ -41,10 +41,10 @@ void dsv_set_log_file_enable(bool flag);
 QString get_dsv_log_path();
 
 #define LOG_PREFIX "" 
-#define dsv_err(fmt, args...) xlog_err(dsv_log, LOG_PREFIX fmt, ## args)
-#define dsv_warn(fmt, args...) xlog_warn(dsv_log, LOG_PREFIX fmt, ## args)
-#define dsv_info(fmt, args...) xlog_info(dsv_log, LOG_PREFIX fmt, ## args)
-#define dsv_dbg(fmt, args...) xlog_dbg(dsv_log, LOG_PREFIX fmt, ## args)
-#define dsv_detail(fmt, args...) xlog_detail(dsv_log, LOG_PREFIX fmt, ## args)
+#define dsv_err(fmt, ...) xlog_err(dsv_log, LOG_PREFIX fmt, ##__VA_ARGS__)
+#define dsv_warn(fmt, ...) xlog_warn(dsv_log, LOG_PREFIX fmt, ##__VA_ARGS__)
+#define dsv_info(fmt, ...) xlog_info(dsv_log, LOG_PREFIX fmt, ##__VA_ARGS__)
+#define dsv_dbg(fmt, ...) xlog_dbg(dsv_log, LOG_PREFIX fmt, ##__VA_ARGS__)
+#define dsv_detail(fmt, ...) xlog_detail(dsv_log, LOG_PREFIX fmt, ##__VA_ARGS__)
 
 #endif

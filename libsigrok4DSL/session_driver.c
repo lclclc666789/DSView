@@ -28,6 +28,10 @@
 #include <minizip/unzip.h>
 #include "log.h"
 
+#ifdef _MSC_VER //不知道为什么 用g_free 会直接崩溃， 凑合一下
+#define g_free free 
+#endif
+
 /* Message logging helpers with subsystem-specific prefix string. */
 
 #undef LOG_PREFIX

@@ -1,29 +1,16 @@
-![DreamSourceLab Logo](DSView/icons/dsl_logo.svg)
+Microsoft Visual Studio Community 2022 (64 位) - Current
+版本 17.10.3
+编译通过
+编译方式
+1、vcpkg 安装以下包
 
+.\vcpkg.exe install atl atlmfc boost brotli bzip2 dirent double-conversion egl-registry expat fftw3 freetype getopt-win32 getopt gettext-libintl gettext glib harfbuzz libffi libiconv libjpeg-turbo liblzma libpng libusb libwebp openssl pcre2 python3 qt5 sqlite3 tiff zlib zstd
 
-# DSView 
-DSView is a GUI program for supporting various instruments from [DreamSourceLab](http://www.dreamsourcelab.com), including logic analyzers, oscilloscopes, etc. DSView is based on the [sigrok project](https://sigrok.org).
+注意 默认在D 盘根目录 安装vcpkg
 
-The sigrok project aims at creating a portable, cross-platform, Free/Libre/Open-Source signal analysis software suite that supports various device types (such as logic analyzers, oscilloscopes, multimeters, and more).
+2、clone 本工程 用visual studio 打开DSView.sln 直接编译 
 
-# Status
+3、 将dll.zip 解压到 D:\DSView\build.dir\Debug\ 
+    虽然选的静态编译 但是运行的时候 仍然包却很多动态库，暂时不知道原因，dll.zip 时所有的库和其他以来选项
 
-The DSView software is in a usable state and has official tarball releases. However, it is still a work in progress. Some basic functionality is available and working, but other things are always on the TODO list.
-
-# Useful links
-
-- [dreamsourcelab.com](https://www.dreamsourcelab.com)
-- [kickstarter.com](https://www.kickstarter.com/projects/dreamsourcelab/dslogic-multifunction-instruments-for-everyone)
-- [sigrok.org](https://sigrok.org)
-
-# Copyright and license
-
-DSView software is licensed under the terms of the GNU General Public License
-(GPL), version 3 or later.
-
-While some individual source code files are licensed under the GPLv2+, and
-some files are licensed under the GPLv3+, this doesn't change the fact that
-the program as a whole is licensed under the terms of the GPLv3+ (e.g. also
-due to the fact that it links against GPLv3+ libraries).
-
-Please see the individual source files for the full list of copyright holders.
+4、可以直接调试，还可以打断点，嘎嘎嘎

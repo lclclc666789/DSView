@@ -112,3 +112,7 @@
 #ifndef _POSIX_C_SOURCE
 # define _POSIX_C_SOURCE 200112L
 #endif
+
+#ifdef _MSC_VER // 
+#define ssize_t int64_t
+#endif

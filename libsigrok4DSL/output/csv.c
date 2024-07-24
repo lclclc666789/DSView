@@ -261,7 +261,7 @@ static int receive(const struct sr_output *o, const struct sr_datafeed_packet *p
             ctx->index++;
 
             if (packet->bExportOriginalData == 0){
-                if (ctx->index > 1 && (*(uint64_t *)(logic->data + i) & ctx->mask) == ctx->pre_data)
+                if (ctx->index > 1 && (*(uint64_t *)((uint8_t*)logic->data + i) & ctx->mask) == ctx->pre_data)
                    continue;
             } 
             
@@ -270,13 +270,13 @@ static int receive(const struct sr_output *o, const struct sr_datafeed_packet *p
 
             for (j = 0; j < ctx->num_enabled_channels; j++) {
                 idx = j;
-				p = logic->data + i + idx / 8;
+				p = (uint8_t*)logic->data + i + idx / 8;
 				c = *p & (1 << (idx % 8));
                 g_string_append_c(*out, ctx->separator);
                 g_string_append_c(*out, c ? '1' : '0');
 			}
 			g_string_append_printf(*out, "\n");
-            ctx->pre_data = (*(uint64_t *)(logic->data + i) & ctx->mask);
+            ctx->pre_data = (*(uint64_t *)((uint8_t*)logic->data + i) & ctx->mask);
 		}
 		break;
      case SR_DF_DSO:
@@ -291,7 +291,7 @@ static int receive(const struct sr_output *o, const struct sr_datafeed_packet *p
         for (i = 0; i < (uint64_t)dso->num_samples; i++) {
             for (j = 0; j < ctx->num_enabled_channels; j++) {
                 idx = ctx->channel_index[j];
-                p = dso->data + i * ctx->num_enabled_channels + idx * ((ctx->num_enabled_channels > 1) ? 1 : 0);
+                p = (uint8_t*)dso->data + i * ctx->num_enabled_channels + idx * ((ctx->num_enabled_channels > 1) ? 1 : 0);
                 g_string_append_printf(*out, "%0.5f", (ctx->channel_offset[j] - *p) *
                                                        ctx->channel_scale[j] /
                                                       (ctx->ref_max - ctx->ref_min));

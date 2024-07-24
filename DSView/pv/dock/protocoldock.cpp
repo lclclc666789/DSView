@@ -397,7 +397,7 @@ bool ProtocolDock::add_protocol_by_id(QString id, bool silent, std::list<pv::dat
     layer->_trace = trace;
 
     // set current protocol format
-    string fmt = AppConfig::Instance().GetProtocolFormat(protocolId.toStdString());
+    string fmt = AppConfig::Instance().GetProtocolFormat(std::string(protocolId.toLocal8Bit()));
     if (fmt != "")
     {
         layer->SetProtocolFormat(fmt.c_str());

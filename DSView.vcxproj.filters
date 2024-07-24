@@ -1,0 +1,1011 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\DSView\common\minizip\zip.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\common\minizip\unzip.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\common\minizip\ioapi.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\common\log\xlog.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\dsapplication.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\log.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\sigsession.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\mainwindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\data\snapshot.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\data\signaldata.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\data\logicsnapshot.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\data\analogsnapshot.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\dialogs\deviceoptions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\prop\property.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\prop\int.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\prop\enum.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\prop\double.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\prop\bool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\prop\binding\binding.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\toolbars\samplingbar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\view\viewport.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\view\view.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\view\timemarker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\view\signal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\view\ruler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\view\logicsignal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\view\header.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\view\cursor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\view\analogsignal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\prop\binding\deviceoptions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\toolbars\trigbar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\toolbars\filebar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\dock\protocoldock.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\dock\triggerdock.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\dock\measuredock.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\dock\searchdock.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\toolbars\logobar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\dialogs\about.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\dialogs\search.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\data\dsosnapshot.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\view\dsosignal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\view\dsldial.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\dock\dsotriggerdock.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\view\trace.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\view\selectableitem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\data\decoderstack.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\data\decode\rowdata.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\data\decode\row.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\data\decode\decoder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\data\decode\annotation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\view\decodetrace.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\prop\binding\decoderoptions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\widgets\fakelineedit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\widgets\decodermenu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\widgets\decodergroupbox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\prop\string.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\dialogs\storeprogress.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\storesession.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\view\devmode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\dialogs\waitingdialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\dialogs\dsomeasure.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\dialogs\calibration.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\data\decodermodel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\dialogs\protocollist.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\dialogs\protocolexp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\dialogs\fftoptions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\data\mathstack.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\view\mathtrace.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\toolbars\titlebar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\mainframe.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\widgets\border.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\dialogs\dsmessagebox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\dialogs\shadow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\dialogs\dsdialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\dialogs\interval.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\prop\binding\probeoptions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\view\viewstatus.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\dialogs\lissajousoptions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\view\lissajoustrace.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\view\spectrumtrace.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\data\spectrumstack.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\dialogs\mathoptions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\dialogs\regionoptions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\view\xcursor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\config\appconfig.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\appcontrol.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\dstimer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\eventobject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\ZipMaker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\data\decode\annotationrestable.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\data\decode\decoderstatus.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\dock\protocolitemlayer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\ui\msgbox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\ui\dscombobox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\dsvdef.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\dialogs\applicationpardlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\dock\keywordlineedit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\dock\searchcombobox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\dialogs\decoderoptionsdlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\utility\encoding.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\utility\path.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\utility\array.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\deviceagent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\ui\langresource.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\ui\fn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\ui\xtoolbutton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\ui\uimanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\DSView\pv\ui\popupdlglist.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\DSView\moc_mystyle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\DSView\pv\moc_log.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\DSView\pv\moc_sigsession.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\DSView\pv\moc_mainwindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\DSView\pv\dialogs\moc_deviceoptions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\DSView\pv\prop\moc_property.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\DSView\pv\prop\moc_int.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\DSView\pv\prop\moc_enum.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\DSView\pv\prop\moc_double.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\DSView\pv\prop\moc_bool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\DSView\pv\toolbars\moc_samplingbar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\DSView\pv\view\moc_viewport.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\DSView\pv\view\moc_view.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\DSView\pv\view\moc_timemarker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\DSView\pv\view\moc_ruler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\DSView\pv\view\moc_header.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\DSView\pv\view\moc_cursor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\DSView\pv\toolbars\moc_trigbar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\DSView\pv\toolbars\moc_filebar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\DSView\pv\dock\moc_protocoldock.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\DSView\pv\dock\moc_triggerdock.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\DSView\pv\dock\moc_measuredock.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\DSView\pv\dock\moc_searchdock.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\DSView\pv\toolbars\moc_logobar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\DSView\pv\dialogs\moc_about.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\DSView\pv\dialogs\moc_search.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\DSView\pv\dock\moc_dsotriggerdock.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\DSView\pv\view\moc_trace.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\DSView\pv\view\moc_selectableitem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\DSView\pv\data\moc_decoderstack.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\DSView\pv\view\moc_decodetrace.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\DSView\pv\widgets\moc_fakelineedit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\DSView\pv\widgets\moc_decodermenu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\DSView\pv\widgets\moc_decodergroupbox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\DSView\pv\prop\moc_string.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\DSView\pv\dialogs\moc_storeprogress.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\DSView\pv\moc_storesession.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\DSView\pv\view\moc_devmode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\DSView\pv\dialogs\moc_waitingdialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\DSView\pv\dialogs\moc_dsomeasure.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\DSView\pv\dialogs\moc_calibration.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\DSView\pv\dialogs\moc_protocollist.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\DSView\pv\dialogs\moc_protocolexp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\DSView\pv\dialogs\moc_fftoptions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\DSView\pv\data\moc_mathstack.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\DSView\pv\view\moc_mathtrace.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\DSView\pv\view\moc_viewstatus.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\DSView\pv\toolbars\moc_titlebar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\DSView\pv\moc_mainframe.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\DSView\pv\widgets\moc_border.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\DSView\pv\dialogs\moc_dsmessagebox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\DSView\pv\dialogs\moc_shadow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\DSView\pv\dialogs\moc_dsdialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\DSView\pv\dialogs\moc_interval.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\DSView\pv\dialogs\moc_lissajousoptions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\DSView\pv\view\moc_lissajoustrace.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\DSView\pv\view\moc_spectrumtrace.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\DSView\pv\data\moc_spectrumstack.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\DSView\pv\dialogs\moc_mathoptions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\DSView\pv\dialogs\moc_regionoptions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\DSView\pv\view\moc_xcursor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\DSView\pv\view\moc_signal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\DSView\pv\view\moc_logicsignal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\DSView\pv\view\moc_analogsignal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\DSView\pv\view\moc_dsosignal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\DSView\pv\config\moc_appconfig.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\DSView\pv\moc_appcontrol.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\DSView\pv\moc_dstimer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\DSView\pv\moc_eventobject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\DSView\pv\moc_ZipMaker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\DSView\pv\data\decode\moc_annotationrestable.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\DSView\pv\data\decode\moc_decoderstatus.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\DSView\pv\dock\moc_protocolitemlayer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\DSView\pv\ui\moc_msgbox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\DSView\pv\ui\moc_dscombobox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\DSView\pv\moc_dsvdef.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\DSView\pv\dialogs\moc_applicationpardlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\DSView\pv\dock\moc_keywordlineedit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\DSView\pv\dock\moc_searchcombobox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\DSView\pv\dialogs\moc_decoderoptionsdlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\DSView\pv\utility\moc_encoding.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\DSView\pv\utility\moc_path.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\DSView\pv\utility\moc_array.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\DSView\pv\moc_deviceagent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\DSView\pv\ui\moc_fn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\DSView\pv\ui\moc_xtoolbutton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\qrc_DSView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\qrc_breeze.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\build\qrc_language.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\libsigrok4DSL\version.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\libsigrok4DSL\strutil.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\libsigrok4DSL\std.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\libsigrok4DSL\session_driver.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\libsigrok4DSL\session.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\libsigrok4DSL\log.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\libsigrok4DSL\hwdriver.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\libsigrok4DSL\error.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\libsigrok4DSL\backend.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\libsigrok4DSL\output\output.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\libsigrok4DSL\input\input.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\libsigrok4DSL\hardware\demo\demo.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\libsigrok4DSL\input\in_binary.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\libsigrok4DSL\input\in_vcd.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\libsigrok4DSL\input\in_wav.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\libsigrok4DSL\output\csv.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\libsigrok4DSL\output\gnuplot.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\libsigrok4DSL\output\srzip.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\libsigrok4DSL\output\vcd.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\libsigrok4DSL\hardware\DSL\dslogic.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\libsigrok4DSL\hardware\common\usb.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\libsigrok4DSL\hardware\common\ezusb.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\libsigrok4DSL\trigger.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\libsigrok4DSL\dsdevice.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\libsigrok4DSL\hardware\DSL\dscope.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\libsigrok4DSL\hardware\DSL\command.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\libsigrok4DSL\hardware\DSL\dsl.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\libsigrok4DSL\lib_main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\libsigrokdecode4DSL\type_decoder.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\libsigrokdecode4DSL\srd.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\libsigrokdecode4DSL\module_sigrokdecode.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\libsigrokdecode4DSL\decoder.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\libsigrokdecode4DSL\error.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\libsigrokdecode4DSL\exception.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\libsigrokdecode4DSL\instance.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\libsigrokdecode4DSL\log.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\libsigrokdecode4DSL\session.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\libsigrokdecode4DSL\util.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DSView\libsigrokdecode4DSL\version.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\DSView\getopt.c" />
+    <ClCompile Include="..\DSView\pv\winnativewidget.cpp" />
+    <ClCompile Include="..\DSView\pv\winshadow.cpp" />
+    <ClCompile Include="dep\moc_winshadow.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\DSView\build\CMakeFiles\e483d4762372176d6d99e39f32644ec1\moc_mystyle.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\DSView\build\CMakeFiles\fe1be2417a02b8c6785e999755035b6f\moc_log.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\DSView\build\CMakeFiles\fe1be2417a02b8c6785e999755035b6f\moc_sigsession.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\DSView\build\CMakeFiles\fe1be2417a02b8c6785e999755035b6f\moc_mainwindow.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\DSView\build\CMakeFiles\b6764383ed0b2517ac171a182cfd96fd\moc_deviceoptions.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\DSView\build\CMakeFiles\69400098f3b598b3d213206668e494fc\moc_property.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\DSView\build\CMakeFiles\69400098f3b598b3d213206668e494fc\moc_int.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\DSView\build\CMakeFiles\69400098f3b598b3d213206668e494fc\moc_enum.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\DSView\build\CMakeFiles\69400098f3b598b3d213206668e494fc\moc_double.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\DSView\build\CMakeFiles\69400098f3b598b3d213206668e494fc\moc_bool.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\DSView\build\CMakeFiles\22a3526706c169e4d08050bc6fd8cf87\moc_samplingbar.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\DSView\build\CMakeFiles\73d2bc42b10ebff859f62b96f1493748\moc_viewport.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\DSView\build\CMakeFiles\73d2bc42b10ebff859f62b96f1493748\moc_view.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\DSView\build\CMakeFiles\73d2bc42b10ebff859f62b96f1493748\moc_timemarker.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\DSView\build\CMakeFiles\73d2bc42b10ebff859f62b96f1493748\moc_ruler.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\DSView\build\CMakeFiles\73d2bc42b10ebff859f62b96f1493748\moc_header.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\DSView\build\CMakeFiles\73d2bc42b10ebff859f62b96f1493748\moc_cursor.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\DSView\build\CMakeFiles\22a3526706c169e4d08050bc6fd8cf87\moc_trigbar.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\DSView\build\CMakeFiles\22a3526706c169e4d08050bc6fd8cf87\moc_filebar.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\DSView\build\CMakeFiles\170466176dc9eb01fab62fd921906d76\moc_protocoldock.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\DSView\build\CMakeFiles\170466176dc9eb01fab62fd921906d76\moc_triggerdock.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\DSView\build\CMakeFiles\170466176dc9eb01fab62fd921906d76\moc_measuredock.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\DSView\build\CMakeFiles\170466176dc9eb01fab62fd921906d76\moc_searchdock.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\DSView\build\CMakeFiles\22a3526706c169e4d08050bc6fd8cf87\moc_logobar.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\DSView\build\CMakeFiles\b6764383ed0b2517ac171a182cfd96fd\moc_about.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\DSView\build\CMakeFiles\b6764383ed0b2517ac171a182cfd96fd\moc_search.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\DSView\build\CMakeFiles\170466176dc9eb01fab62fd921906d76\moc_dsotriggerdock.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\DSView\build\CMakeFiles\73d2bc42b10ebff859f62b96f1493748\moc_trace.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\DSView\build\CMakeFiles\73d2bc42b10ebff859f62b96f1493748\moc_selectableitem.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\DSView\build\CMakeFiles\5dfb877dad77463e726ef6f5d96785c3\moc_decoderstack.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\DSView\build\CMakeFiles\73d2bc42b10ebff859f62b96f1493748\moc_decodetrace.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\DSView\build\CMakeFiles\1d4076c93e8d73f4d943fa65c081f428\moc_fakelineedit.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\DSView\build\CMakeFiles\1d4076c93e8d73f4d943fa65c081f428\moc_decodermenu.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\DSView\build\CMakeFiles\1d4076c93e8d73f4d943fa65c081f428\moc_decodergroupbox.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\DSView\build\CMakeFiles\69400098f3b598b3d213206668e494fc\moc_string.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\DSView\build\CMakeFiles\b6764383ed0b2517ac171a182cfd96fd\moc_storeprogress.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\DSView\build\CMakeFiles\fe1be2417a02b8c6785e999755035b6f\moc_storesession.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\DSView\build\CMakeFiles\73d2bc42b10ebff859f62b96f1493748\moc_devmode.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\DSView\build\CMakeFiles\b6764383ed0b2517ac171a182cfd96fd\moc_waitingdialog.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\DSView\build\CMakeFiles\b6764383ed0b2517ac171a182cfd96fd\moc_dsomeasure.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\DSView\build\CMakeFiles\b6764383ed0b2517ac171a182cfd96fd\moc_calibration.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\DSView\build\CMakeFiles\b6764383ed0b2517ac171a182cfd96fd\moc_protocollist.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\DSView\build\CMakeFiles\b6764383ed0b2517ac171a182cfd96fd\moc_protocolexp.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\DSView\build\CMakeFiles\b6764383ed0b2517ac171a182cfd96fd\moc_fftoptions.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\DSView\build\CMakeFiles\5dfb877dad77463e726ef6f5d96785c3\moc_mathstack.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\DSView\build\CMakeFiles\73d2bc42b10ebff859f62b96f1493748\moc_mathtrace.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\DSView\build\CMakeFiles\73d2bc42b10ebff859f62b96f1493748\moc_viewstatus.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\DSView\build\CMakeFiles\22a3526706c169e4d08050bc6fd8cf87\moc_titlebar.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\DSView\build\CMakeFiles\fe1be2417a02b8c6785e999755035b6f\moc_mainframe.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\DSView\build\CMakeFiles\1d4076c93e8d73f4d943fa65c081f428\moc_border.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\DSView\build\CMakeFiles\b6764383ed0b2517ac171a182cfd96fd\moc_dsmessagebox.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\DSView\build\CMakeFiles\b6764383ed0b2517ac171a182cfd96fd\moc_shadow.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\DSView\build\CMakeFiles\b6764383ed0b2517ac171a182cfd96fd\moc_dsdialog.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\DSView\build\CMakeFiles\b6764383ed0b2517ac171a182cfd96fd\moc_interval.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\DSView\build\CMakeFiles\b6764383ed0b2517ac171a182cfd96fd\moc_lissajousoptions.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\DSView\build\CMakeFiles\73d2bc42b10ebff859f62b96f1493748\moc_lissajoustrace.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\DSView\build\CMakeFiles\73d2bc42b10ebff859f62b96f1493748\moc_spectrumtrace.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\DSView\build\CMakeFiles\5dfb877dad77463e726ef6f5d96785c3\moc_spectrumstack.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\DSView\build\CMakeFiles\b6764383ed0b2517ac171a182cfd96fd\moc_mathoptions.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\DSView\build\CMakeFiles\b6764383ed0b2517ac171a182cfd96fd\moc_regionoptions.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\DSView\build\CMakeFiles\73d2bc42b10ebff859f62b96f1493748\moc_xcursor.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\DSView\build\CMakeFiles\73d2bc42b10ebff859f62b96f1493748\moc_signal.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\DSView\build\CMakeFiles\73d2bc42b10ebff859f62b96f1493748\moc_logicsignal.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\DSView\build\CMakeFiles\73d2bc42b10ebff859f62b96f1493748\moc_analogsignal.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\DSView\build\CMakeFiles\73d2bc42b10ebff859f62b96f1493748\moc_dsosignal.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\DSView\build\CMakeFiles\00583d369ed13e0a3bfc6957a37d6a0f\moc_appconfig.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\DSView\build\CMakeFiles\fe1be2417a02b8c6785e999755035b6f\moc_appcontrol.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\DSView\build\CMakeFiles\fe1be2417a02b8c6785e999755035b6f\moc_dstimer.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\DSView\build\CMakeFiles\fe1be2417a02b8c6785e999755035b6f\moc_eventobject.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\DSView\build\CMakeFiles\fe1be2417a02b8c6785e999755035b6f\moc_ZipMaker.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\DSView\build\CMakeFiles\7f8a53149a490eb74d208d9e019ac832\moc_annotationrestable.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\DSView\build\CMakeFiles\7f8a53149a490eb74d208d9e019ac832\moc_decoderstatus.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\DSView\build\CMakeFiles\170466176dc9eb01fab62fd921906d76\moc_protocolitemlayer.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\DSView\build\CMakeFiles\57a4aa885a86f1c2e2293385fecbf6c7\moc_msgbox.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\DSView\build\CMakeFiles\57a4aa885a86f1c2e2293385fecbf6c7\moc_dscombobox.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\DSView\build\CMakeFiles\fe1be2417a02b8c6785e999755035b6f\moc_dsvdef.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\DSView\build\CMakeFiles\b6764383ed0b2517ac171a182cfd96fd\moc_applicationpardlg.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\DSView\build\CMakeFiles\170466176dc9eb01fab62fd921906d76\moc_keywordlineedit.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\DSView\build\CMakeFiles\170466176dc9eb01fab62fd921906d76\moc_searchcombobox.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\DSView\build\CMakeFiles\b6764383ed0b2517ac171a182cfd96fd\moc_decoderoptionsdlg.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\DSView\build\CMakeFiles\5b401689f34c2a6d8012160d8b488d00\moc_encoding.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\DSView\build\CMakeFiles\5b401689f34c2a6d8012160d8b488d00\moc_path.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\DSView\build\CMakeFiles\5b401689f34c2a6d8012160d8b488d00\moc_array.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\DSView\build\CMakeFiles\fe1be2417a02b8c6785e999755035b6f\moc_deviceagent.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\DSView\build\CMakeFiles\57a4aa885a86f1c2e2293385fecbf6c7\moc_fn.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\DSView\build\CMakeFiles\57a4aa885a86f1c2e2293385fecbf6c7\moc_xtoolbutton.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\DSView\DSView\DSView.qrc" />
+    <CustomBuild Include="D:\DSView\DSView\themes\breeze.qrc" />
+    <CustomBuild Include="D:\DSView\DSView\languages\language.qrc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="D:\DSView\applogo.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{EAD05DC0-B283-361A-9447-4B712835AA54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{391270AB-51C1-397B-BB95-5A00B66BAC5B}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\DSView\pv\appcontrol.h" />
+    <ClInclude Include="..\DSView\pv\deviceagent.h" />
+    <ClInclude Include="..\DSView\pv\dstimer.h" />
+    <ClInclude Include="..\DSView\pv\dsvdef.h" />
+    <ClInclude Include="..\DSView\pv\eventobject.h" />
+    <ClInclude Include="..\DSView\pv\log.h" />
+    <ClInclude Include="..\DSView\pv\mainframe.h" />
+    <ClInclude Include="..\DSView\pv\mainwindow.h" />
+    <ClInclude Include="..\DSView\pv\sigsession.h" />
+    <ClInclude Include="..\DSView\pv\storesession.h" />
+    <ClInclude Include="..\DSView\pv\winnativewidget.h" />
+    <ClInclude Include="..\DSView\pv\winshadow.h" />
+    <ClInclude Include="..\DSView\pv\ZipMaker.h" />
+  </ItemGroup>
+</Project>

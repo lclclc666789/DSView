@@ -369,7 +369,7 @@ SR_PRIV int sr_exit(struct sr_context *ctx)
 	return SR_OK;
 }
 
-LIBUSB_CALL int sr_hotplug_callback(struct libusb_context *ctx, struct libusb_device *dev,
+int LIBUSB_CALL  sr_hotplug_callback(struct libusb_context *ctx, struct libusb_device *dev,
                                   libusb_hotplug_event event, void *user_data){
 
 	  if (user_data == NULL){

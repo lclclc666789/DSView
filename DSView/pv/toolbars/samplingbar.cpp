@@ -44,6 +44,10 @@
 #define REPEAT_ACTION_ICON  "/repeat.svg"
 #define LOOP_ACTION_ICON  "/loop.svg"
 
+#ifdef _MSC_VER
+#define g_free free
+#endif
+
 using std::map;
 using std::max;
 using std::min;

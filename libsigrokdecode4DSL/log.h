@@ -48,10 +48,11 @@ SRD_API void srd_log_set_context(xlog_context *ctx);
 SRD_API void srd_log_level(int level);
 
 #define LOG_PREFIX "" 
-#define srd_err(fmt, args...) xlog_err(srd_log, LOG_PREFIX fmt, ## args)
-#define srd_warn(fmt, args...) xlog_warn(srd_log, LOG_PREFIX fmt, ## args)
-#define srd_info(fmt, args...) xlog_info(srd_log, LOG_PREFIX fmt, ## args)
-#define srd_dbg(fmt, args...) xlog_dbg(srd_log, LOG_PREFIX fmt, ## args)
-#define srd_detail(fmt, args...) xlog_detail(srd_log, LOG_PREFIX fmt, ## args)
+#define srd_err(fmt, ...) xlog_err(srd_log, LOG_PREFIX fmt, ##__VA_ARGS__)
+
+#define srd_warn(fmt, ...) xlog_warn(srd_log, LOG_PREFIX fmt, ##__VA_ARGS__)
+#define srd_info(fmt, ...) xlog_info(srd_log, LOG_PREFIX fmt, ##__VA_ARGS__)
+#define srd_dbg(fmt, ...) xlog_dbg(srd_log, LOG_PREFIX fmt, ##__VA_ARGS__)
+#define srd_detail(fmt, ...) xlog_detail(srd_log, LOG_PREFIX fmt, ##__VA_ARGS__)
 
 #endif

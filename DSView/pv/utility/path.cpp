@@ -31,7 +31,11 @@ namespace path{
 
     std::string ConvertPath(QString fileName)
     {
+#ifdef _MSC_VER //微软的编译器 静态编译的时候 不能用toStdString，qt说时msvc瞎搞，msvc不搭理qt.
+        return  std::string(fileName.toLocal8Bit()); 
+#else
         return fileName.toUtf8().toStdString();
+#endif  
     }
 
     QString GetDirectoryName(QString path)

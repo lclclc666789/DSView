@@ -219,7 +219,7 @@ static int receive(const struct sr_output *o, const struct sr_datafeed_packet *p
 		}
 
 		for (i = 0; i <= logic->length - logic->unitsize; i += logic->unitsize) {
-			sample = logic->data + i;
+			sample = (uint8_t*)logic->data + i;
 			timestamp_written = FALSE;
 
 			for (p = 0; p < ctx->num_enabled_channels; p++) {

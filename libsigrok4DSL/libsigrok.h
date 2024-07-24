@@ -369,7 +369,11 @@ struct sr_datafeed_packet {
 
 struct sr_datafeed_header {
 	int feed_version;
+#ifdef _MSC_VER // timeval 一直报重复定义，凑合一下
+	struct _timeval starttime;
+#else
 	struct timeval starttime;
+#endif
 };
 
 struct sr_datafeed_meta {
